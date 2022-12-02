@@ -30,5 +30,10 @@ function listar() {
     })
 }
 
-
-
+function listar_por_categoria(categoria) {
+    produtos.forEach(p => {
+        if (categoria == p.categoria) {
+            console.log(p) }
+    })
+}
+console.log(listar_por_categoria("Celulares"))
