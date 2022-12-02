@@ -36,4 +36,12 @@ function listar_por_categoria(categoria) {
             console.log(p) }
     })
 }
+function listar_por_valor(valor_maximo) {
+    produtos.forEach(p => {
+        if (valor_maximo == p.valor) {
+            console.log(p) }
+    })
+}
+
 console.log(listar_por_categoria("Celulares"))
+console.log(listar_por_valor("2000"))
